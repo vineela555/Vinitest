@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    
+		<meta charset="utf-8" />
+    
+		<title>Home Screen</title>
+    
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" /> 
+        
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js"></script>-->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link href="css/app.css" rel="stylesheet" />
+	
+</head>
+	
+<body>
+ <section id="header">
+		<div class="bg_blue padding_tb text_white">
+			<div class="container"><div class="row">
+				<div class="col col-md-6 col-sm-6"><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> e-Registration healpdesk toll free No</div>
+				<div class="col col-md-6 col-sm-6 text-right"><a href="userdetails.html" class="text_white"><i class="fa fa-user fa-2x" aria-hidden="true"></i> Sanjay Rastogi</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html" class="text_white"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i> Logout</a></div>
+			</div></div>
+		</div>
+		<div class="logo bg_darkblue text-center text_white">
+			<h1>National Health Protection Scheme</h1>
+		</div>
+		<div class="logo bg_cream"><div class="container"><h4><a href="homesystem.html">Home</a> &nbsp;&gt;&nbsp;Create User &nbsp;&gt;&nbsp; User details</h4></div></div>
+</section>
+<section id="main">
+<div class="container">
+	<div class="page_bg">
+		<!-- Nav tabs -->
+		<!--<ul class="nav nav-tabs">
+		  <li class="active"><a href="#Login" data-toggle="tab"><i class="fa fa-unlock-alt"></i> User Login</a></li>
+		  <li><a href="#Registration" data-toggle="tab"><i class="fa fa-user"></i> User Registration</a></li>
+		  
+		</ul>-->
+		<!-- Tab panes -->
+
+		  
+		  <div class="tab-pane registration" id="Registration">
+			<form class="form-horizontal page-content">
+                <div class="form-group row_odd">
+  			          <div class="col-md-3 col-sm-3 first"><label>User Type:</label></div>
+                  <div class="col-md-3 col-sm-3 first"> 
+                     <p>SNA</p>
+                  </div>
+                  <div class="col-md-3 col-sm-3 second"><label>Aadhar ID:</label></div>
+                  <div class="col-md-3 col-sm-3 second"><!--<span>4329 **** </span><i class="fa fa-unlock-alt"></i> <br> <input type="text" placeholder="confirm" style="display:none">-->
+                      <input type="password" value="43291234" style="border:none; background:none; width:auto" id="pas_wd" readonly> <i class="fa fa-unlock-alt" data-toggle="modal" data-target="#myModal"></i><br>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-3 col-sm-3 first"><label> Name:</label></div>
+                  <div class="col-md-3 col-sm-3 first">Dummy Name</div>
+                  <div class="col-md-3 col-sm-3 second"><label> Email ID:</label></div>
+                  <div class="col-md-3 col-sm-3 second">test@test.com</div>
+               </div>
+                <div class="form-group row_odd">
+                  <div class="col-md-3 col-sm-3 first"><label>Mobile No:</label></div>
+                  <div class="col-md-3 col-sm-3 first">1234567890</div>
+                  <div class="col-md-3 col-sm-3 second"><label>Address:</label></div>
+                  <div class="col-md-3 col-sm-3 second">Plot No 2,3,4, Knowledge Park-4, IT Park, Near Delta I, Gautam Budh Nagar, Greater Noida, Uttar Pradesh 201308</div>
+                </div>
+                <div class="form-group">
+  			          <div class="col-md-3 col-sm-3 first"><label>State:</label></div>
+                  <div class="col-md-3 col-sm-3 first"><p>Delhi</p></div>
+                  <div class="col-md-3 col-sm-3 second"><label>District:</label></div>
+  			          <div class="col-md-3 col-sm-3 second"><p>Delhi</p></div>
+  			        </div>
+               
+                <hr>
+                <div class="form-group"> 
+                    <div class="float-rgt">
+                      <button class="btn btn-primary" type="button" onclick="location.href='homesystem.html'">Close</button>                      
+                    </div>
+                </div>
+			</form>
+		  </div>
+	
+	</div>
+</div>
+</section>     
+<section id="footer">
+		<div class="bg_purpal padding_tb text_white">
+		
+			<div class="container">
+				<div class="footer">
+					<!--div class="footer_strip bg_blue"></div-->
+					<div class="footer_text">DISCLAIMER: Content edited, maintained and updated by M/s Wipro Infotech, Guargaon</div>
+				</div>
+			</div>
+		</div>
+	</section>
+     <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="vertical-alignment-helper">
+    <div class="modal-dialog vertical-align-center">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal page-content">
+                <div class="form-group row_odd">
+  			      <label class="col-md-offset-1 col-sm-offset-1 col-md-4 col-sm-4">Confirm password:</label>
+                  <div class="col-md-3 col-sm-3"> 
+                     <input type="password" class="form-control"></div>
+                <div class="col-md-2 col-sm-2"> 
+                     <button onclick="location.href='createuser.html'"  class="btn btn-primary" type="button">Confirm</button>
+                    </div></div>
+            </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<script src="js/webapp.js"></script>
+<script src="js/statedist.js"></script>
+</body>
+</html>
